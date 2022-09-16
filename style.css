@@ -1,0 +1,160 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:borderbox;
+}
+header{
+  text-align:center;
+  padding-top:32px;
+   background-image:linear-gradient(180deg, #1E90FF 0%, #1E90FF 50%, white 100%);
+  
+}
+.pokemon {
+  display:flex;
+  position:absolute;
+  left:30px;
+  top:30px;
+  width:330px;
+  height:130px;
+  padding:0;
+  border-radius:0;
+}
+
+.logo{
+  width:120px;
+  margin:auto;
+  background-image:linear-gradient(90deg, green 0%, red 50%, blue 100%);
+  border-radius:50%;
+  display:flex;
+  padding:3px;
+  transition: transform .3s;
+  animation: fromTop .7s .2s backwards
+}
+
+
+.logo:hover{
+  transform: scale(1.1);
+}
+header img{
+  width:100%;
+  border-radius:50%;
+  
+}
+
+li img{
+  width:130px;
+  height:150px;
+  background-color: #FFE4E1	
+  
+  
+}
+ul {
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:24px;
+}
+body{
+  background-image: url(https://www.wallpapertip.com/wmimgs/167-1671402_pokemon-wallpaper-pokemon-chibi-wallpaper-desktop.jpg);
+    background-position: bottom center ;
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  
+}
+body *{
+  font-family: 'Inter', sans-serif;
+  line-height:160%;
+  
+}
+main *{
+  
+}
+main{
+  max-width:580px;
+  width:90%;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+    margin:32px auto;
+  
+}
+main section{
+  animation: fromBottom .7s backwards;
+  
+}
+main section:nth-child(1){
+  animation-delay:.0s;
+}
+main section:nth-child(2){
+  animation-delay:.4s;
+}
+main section:nth-child(3){
+  animation-delay:.8s;
+}
+section {
+  background-image:linear-gradient(90deg, green 0%, red 50%, blue 100%);
+  background-size:;
+  padding:4px;
+  width:650px;
+    border-radius:10px;
+    
+}
+section div{
+  background-color:white;
+    
+      padding:32px;
+  padding-top:24px;
+  border-radius:8px;
+  
+}
+section h2{
+
+letter-spacing: -0.47px;;
+color:blue;
+}
+section p{
+letter-spacing: -0.18px;
+  color:pink;
+}
+.games img{
+ border-radius:8px; 
+}
+.pokemons img{
+  border-radius:50%;
+    width:120px;
+  height:120px;
+  
+}
+ul li{
+  transition: transform .3s
+}
+ul li:hover{
+  transform: scale(1.1);
+}
+/*animation*/
+
+@keyframes fromTop{
+  from{
+    opacity:0;
+    transform:translateY(-30px)
+  }
+  
+  
+  to{
+    opacity:1;
+    transform:translateY(0)
+  }
+}
+@keyframes fromBottom{
+  from{
+    opacity:0;
+    transform:translateY(30px)
+  }
+  
+  
+  to{
+    opacity:1;
+    transform:translateY(0)
+  }
+}
