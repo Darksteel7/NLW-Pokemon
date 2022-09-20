@@ -7,7 +7,7 @@
 
 Projeto desenvolvido durante a NLW-eSports da Rocketseat!
 
-[Clique aqui para acessar](https://darksteel7.github.io/NLW-Pokemon/)
+[Clique aqui para acessar](https://julianreina96.github.io/NLW-Pokemon/)
 
 ## Tecnologias 
 
